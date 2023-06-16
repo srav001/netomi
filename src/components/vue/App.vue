@@ -27,8 +27,8 @@ function resetGame() {
 </script>
 
 <template>
-	<div class="h-screen flex flex-col items-center justify-center">
-		<section class="grid grid-cols-4 gap-4 -mt-4">
+	<div class="flex h-screen flex-col items-center justify-center">
+		<section class="-mt-4 grid grid-cols-4 gap-4">
 			<CardItem
 				v-for="item in cardList"
 				:key="item.id"
@@ -37,7 +37,7 @@ function resetGame() {
 		</section>
 		<button
 			@click="resetGame"
-			class="mt-10 shadow-md hover:shadow-lg transition-all duration-300 ease-in-out cursor-pointer text-xl mb-5 py-4 px-10 font-bold text-white rounded-lg outline-none">
+			class="mb-5 mt-10 cursor-pointer rounded-lg px-10 py-4 text-xl font-bold text-white shadow-md outline-none transition-all duration-300 ease-in-out hover:shadow-lg">
 			Reset
 		</button>
 	</div>

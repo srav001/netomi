@@ -7,5 +7,9 @@ module.exports = {
 	singleQuote: true,
 	arrowParens: 'avoid',
 	bracketSpacing: true,
-	bracketSameLine: true
+	bracketSameLine: true,
+	plugins: [
+		'prettier-plugin-svelte',
+		'prettier-plugin-tailwindcss' // MUST come last
+	]
 };
