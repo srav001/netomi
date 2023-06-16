@@ -1,4 +1,7 @@
 import { defineConfig } from 'astro/config';
+import unocss from 'unocss/astro';
+import vue from '@astrojs/vue';
 
-// https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+	integrations: [unocss(), vue()]
+});
