@@ -8,8 +8,5 @@ module.exports = {
 	arrowParens: 'avoid',
 	bracketSpacing: true,
 	bracketSameLine: true,
-	plugins: [
-		'prettier-plugin-svelte',
-		'prettier-plugin-tailwindcss' // MUST come last
-	]
+	plugins: ['prettier-plugin-svelte', 'prettier-plugin-tailwindcss']
 };
