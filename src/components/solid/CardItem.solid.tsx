@@ -13,9 +13,6 @@ export default function (props: Props) {
 			style="{border: 2px solid green;}"
 			class="m-3 cursor-pointer rounded-lg bg-white p-2 shadow-md transition-shadow duration-300 ease-in-out hover:shadow-xl"
 			onClick={() => props.onCardClick(props.item.id)}>
-			{props.item.name}
-			{props.item.id}
-			{JSON.stringify(props.item.isOpen)}
 			<img height="150" width="120" src={imagePath()} alt="Image" />
 		</div>
 	);

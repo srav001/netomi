@@ -1,5 +1,5 @@
 /** @jsxImportSource solid-js */
-import CardItem from './CardItem';
+import CardItem from './CardItem.solid';
 import gameData from '../../utils/app.mock';
 import { shuffle } from '../../utils/shuffle';
 import { activateCard, resetCards } from '../../utils/card';
@@ -10,20 +10,18 @@ export default function () {
 	const [getCardList, setCardList] = createSignal(shuffle(gameData));
 
 	function onClickHandler(currentId: number) {
-		console.log(currentId);
-		const card = getCardList().find(item => item.id === currentId);
+		const cardList = structuredClone(getCardList());
+		const card = cardList.find(item => item.id === currentId);
 		if (!card) return;
 		const lastCardName = activateCard(card);
 		if (lastCardName) {
-			for (const item of getCardList()) {
+			for (const item of cardList) {
 				if (item.name === lastCardName) {
 					item.isOpen = false;
 				}
 			}
 		}
-		console.log(structuredClone(getCardList()));
-		setCardList(getCardList());
-		console.log(structuredClone(getCardList()));
+		setCardList(cardList);
 	}
 
 	function resetGame() {
