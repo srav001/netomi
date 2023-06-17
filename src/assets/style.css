@@ -1,0 +1,44 @@
+.btn {
+	text-decoration: none;
+	@apply m-5 cursor-pointer rounded-lg px-6 py-4 text-xl font-bold text-white shadow-md transition-all duration-300 ease-in-out hover:shadow-lg;
+}
+
+.btn-react {
+	border: 2px solid var(--primary-react);
+	background-color: var(--primary-react);
+}
+.btn-react:hover {
+	background-color: var(--background);
+	border: 2px solid var(--primary-react);
+	color: var(--primary-react);
+}
+
+.btn-vue {
+	border: 2px solid var(--primary-vue);
+	background-color: var(--primary-vue);
+}
+.btn-vue:hover {
+	background-color: var(--background);
+	border: 2px solid var(--primary-vue);
+	color: var(--primary-vue);
+}
+
+.btn-svelte {
+	border: 2px solid var(--primary-svelte);
+	background-color: var(--primary-svelte);
+}
+.btn-svelte:hover {
+	background-color: var(--background);
+	border: 2px solid var(--primary-svelte);
+	color: var(--primary-svelte);
+}
+
+.btn-solid {
+	border: 2px solid var(--primary-solid);
+	background-color: var(--primary-solid);
+}
+.btn-solid:hover {
+	background-color: var(--background);
+	border: 2px solid var(--primary-solid);
+	color: var(--primary-solid);
+}

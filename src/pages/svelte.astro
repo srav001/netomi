@@ -4,7 +4,14 @@ import App from "../components/svelte/App.svelte";
 ---
 
 <Layout title="Svelte Netomi">
-<main>
-  <App client:load />
-</main>
+  <main>
+    <App client:load />
+  </main>
 </Layout>
+
+<style>
+:root {
+  --primary: var(--primary-svelte);
+}
+</style>
+

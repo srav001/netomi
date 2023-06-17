@@ -33,9 +33,7 @@ export default function () {
 			<section class="-mt-4 grid grid-cols-4 gap-4">
 				<For each={getCardList()}>{item => <CardItem item={item} onCardClick={onClickHandler}></CardItem>}</For>
 			</section>
-			<button
-				onClick={resetGame}
-				class="mb-5 mt-10 cursor-pointer rounded-lg px-10 py-4 text-xl font-bold text-white shadow-md outline-none transition-all duration-300 ease-in-out hover:shadow-lg">
+			<button onClick={resetGame} class="btn btn-solid mt-10">
 				Reset
 			</button>
 		</div>

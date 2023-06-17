@@ -35,23 +35,6 @@ function resetGame() {
 				:item="item"
 				@card-click="onClickHandler($event)"></CardItem>
 		</section>
-		<button
-			@click="resetGame"
-			class="mb-5 mt-10 cursor-pointer rounded-lg px-10 py-4 text-xl font-bold text-white shadow-md outline-none transition-all duration-300 ease-in-out hover:shadow-lg">
-			Reset
-		</button>
+		<button @click="resetGame" class="btn btn-vue mt-10">Reset</button>
 	</div>
 </template>
-
-<style scoped>
-button {
-	border: 2px solid green;
-	background-color: green;
-}
-
-button:hover {
-	background-color: #f6f6f6;
-	border: 2px solid green;
-	color: green;
-}
-</style>

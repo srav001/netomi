@@ -21,6 +21,6 @@
 
 <style>
 	div {
-		border: 2px solid green;
+		border: 2px solid var(--primary);
 	}
 </style>

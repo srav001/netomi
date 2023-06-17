@@ -4,7 +4,14 @@ import App from "../components/vue/App.vue";
 ---
 
 <Layout title="Vue Netomi">
-<main>
-  <App client:load />
-</main>
+  <main>
+    <App client:load />
+  </main>
 </Layout>
+
+<style>
+:root {
+  --primary: var(--primary-vue);
+}
+</style>
+

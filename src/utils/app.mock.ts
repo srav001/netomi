@@ -80,4 +80,4 @@ export default [
 		pic: images.Brooks,
 		isOpen: false
 	}
-];
+] satisfies Card[];

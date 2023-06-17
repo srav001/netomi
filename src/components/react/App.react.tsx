@@ -21,9 +21,7 @@ export default function () {
 					<CardItem key={itemIndex} {...item}></CardItem>
 				))}
 			</section>
-			<button
-				onClick={resetGame}
-				className="mb-5 mt-10 cursor-pointer rounded-lg px-10 py-4 text-xl font-bold text-white shadow-md outline-none transition-all duration-300 ease-in-out hover:shadow-lg">
+			<button onClick={resetGame} className="btn btn-react mt-10">
 				Reset
 			</button>
 		</div>
