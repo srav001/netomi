@@ -27,7 +27,7 @@
 </script>
 
 <div class="flex flex-col items-center">
-	<section class="-mt-4 grid grid-cols-4 gap-4">
+	<section class="grid grid-cols-4 gap-4">
 		{#each cardList as item}
 			<CardItem {item} on:card-click={onClickHandler} />
 		{/each}

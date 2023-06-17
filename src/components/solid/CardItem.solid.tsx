@@ -10,10 +10,10 @@ export default function (props: Props) {
 	return (
 		<div
 			id={String(props.item.id)}
-			style="{border: 2px solid var(--primary)}"
-			class="m-3 cursor-pointer rounded-lg bg-white p-2 shadow-md transition-shadow duration-300 ease-in-out hover:shadow-xl"
+			style={{ border: '2px solid var(--primary)' }}
+			class="cursor-pointer rounded-lg bg-white p-2 shadow-md transition-shadow duration-300 ease-in-out hover:shadow-xl"
 			onClick={() => props.onCardClick(props.item.id)}>
-			<img height="150" width="120" src={imagePath()} alt="Image" />
+			<img class="card-img" height="150" width="120" src={imagePath()} alt="Image" />
 		</div>
 	);
 }

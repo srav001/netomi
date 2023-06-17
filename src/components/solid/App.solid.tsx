@@ -30,7 +30,7 @@ export default function () {
 
 	return (
 		<div class="flex flex-col items-center">
-			<section class="-mt-4 grid grid-cols-4 gap-4">
+			<section class="grid grid-cols-4 gap-4">
 				<For each={getCardList()}>{item => <CardItem item={item} onCardClick={onClickHandler}></CardItem>}</For>
 			</section>
 			<button onClick={resetGame} class="btn btn-solid mt-10">

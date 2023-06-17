@@ -42,3 +42,23 @@
 	border: 2px solid var(--primary-solid);
 	color: var(--primary-solid);
 }
+
+.card-img {
+	@apply m-3;
+	max-height: 150px;
+	max-width: 120px;
+}
+
+@media screen and (min-width: 768px) {
+	.card-img {
+		min-height: 150px;
+		min-width: 120px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.card-img {
+		max-height: 25px !important;
+		max-width: 20px !important;
+	}
+}

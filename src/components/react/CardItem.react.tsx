@@ -9,9 +9,9 @@ export default React.memo(({ id, pic, isOpen }: Props) => {
 	return (
 		<div
 			style={{ border: '2px solid var(--primary)' }}
-			className="m-3 cursor-pointer rounded-lg bg-white p-2 shadow-md transition-shadow duration-300 ease-in-out hover:shadow-xl"
+			className="cursor-pointer rounded-lg bg-white p-2 shadow-md transition-shadow duration-300 ease-in-out hover:shadow-xl"
 			onClick={() => clickHandler(id)}>
-			<img height="150" width="120" src={imagePath} alt="rmage" />
+			<img className="card-img" height="150" width="120" src={imagePath} alt="rmage" />
 		</div>
 	);
 });

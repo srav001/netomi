@@ -15,9 +15,9 @@ defineEmits<{
 <template>
 	<div
 		:id="String(item.id)"
-		class="m-3 cursor-pointer rounded-lg bg-white p-2 shadow-md transition-shadow duration-300 ease-in-out hover:shadow-xl"
+		class="cursor-pointer rounded-lg bg-white p-2 shadow-md transition-shadow duration-300 ease-in-out hover:shadow-xl"
 		@click="$emit('card-click', item.id)">
-		<img height="150" width="120" style="min-width: 50px; min-height: 50px" :src="imagePath" alt="Image" />
+		<img class="card-img" height="150" width="120" :src="imagePath" alt="Image" />
 	</div>
 </template>
 
