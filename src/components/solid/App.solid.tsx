@@ -1,3 +1,4 @@
+/** @jsxImportSource solid-js */
 import CardItem from './CardItem.solid';
 import gameData from '../../utils/app.mock';
 import { shuffle } from '../../utils/shuffle';

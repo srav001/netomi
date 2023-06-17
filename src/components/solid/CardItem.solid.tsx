@@ -1,3 +1,4 @@
+/** @jsxImportSource solid-js */
 import { createMemo } from 'solid-js';
 import { blankCard as defaultImage } from '../../assets/images';
 import type { Card } from '../../utils/app.mock';
