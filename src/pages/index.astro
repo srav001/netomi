@@ -8,23 +8,11 @@ function getNameOfVersion(version: string) {
 ---
 
 <Layout title="Welcome to Netomi">
-	<main class="flex h-screen flex-col items-center justify-center">
-    <h1 class="text-6xl">NETOMI</h1>
-		<p class="font-bold text-gray text-3xl">Pick your Poison 🙃</p>
-    { versions.map(version => 
-      <a class:list={['btn', `btn-${version}`]} href={`/${version}`}>{getNameOfVersion(version)}</a>
-    )}
-	</main>
+	<small class="text-gray">Pick the matching pairs of Cards.</small>
+  <p class="font-bold text-purple text-3xl">Pick your Poison 🙃</p>
+  
+  { versions.map(version => 
+    <a class:list={['btn', `btn-${version}`]} href={`/${version}`}>{getNameOfVersion(version)}</a>
+  )}
 </Layout>
-
-<style>
-h1 {
-		background-image: linear-gradient(45deg, rgb(124, 58, 237), #da62c4 30%, white 60%);;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-</style>
-
 

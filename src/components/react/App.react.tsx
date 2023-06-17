@@ -15,7 +15,7 @@ export default function () {
 	}
 
 	return (
-		<div className="flex h-screen flex-col items-center justify-center">
+		<div className="flex flex-col items-center">
 			<section className="-mt-4 grid grid-cols-4 gap-4">
 				{cardList.map((item, itemIndex) => (
 					<CardItem key={itemIndex} {...item}></CardItem>

@@ -29,7 +29,7 @@ export default function () {
 	}
 
 	return (
-		<div class="flex h-screen flex-col items-center justify-center">
+		<div class="flex flex-col items-center">
 			<section class="-mt-4 grid grid-cols-4 gap-4">
 				<For each={getCardList()}>{item => <CardItem item={item} onCardClick={onClickHandler}></CardItem>}</For>
 			</section>
