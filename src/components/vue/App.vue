@@ -28,7 +28,7 @@ function resetGame() {
 
 <template>
 	<div class="flex flex-col items-center">
-		<section class="-mt-4 grid grid-cols-4 gap-4">
+		<section class="grid grid-cols-4 gap-4">
 			<CardItem
 				v-for="item in cardList"
 				:key="item.id"
