@@ -1,27 +1,14 @@
 import CardItem from './CardItem.react';
+import { resetCards } from '../../utils/card';
+import { initClickHandler } from './cardAction';
 import gameData from '../../utils/app.mock';
 import { shuffle } from '../../utils/shuffle';
-import { activateCard, resetCards } from '../../utils/card';
-import { useState } from 'react';
 import './styles.css';
+import { useState } from 'react';
 
 export default function () {
 	const [cardList, setCardList] = useState(shuffle(gameData));
-
-	function onClickHandler(currentId: number) {
-		const cardListNew = structuredClone(cardList);
-		const card = cardListNew.find(item => item.id === currentId);
-		if (!card) return;
-		const lastCardName = activateCard(card);
-		if (lastCardName) {
-			for (const item of cardListNew) {
-				if (item.name === lastCardName) {
-					item.isOpen = false;
-				}
-			}
-		}
-		setCardList(cardListNew);
-	}
+	initClickHandler({ cardList, setCardList });
 
 	function resetGame() {
 		setCardList(resetCards());
@@ -31,7 +18,7 @@ export default function () {
 		<div className="flex h-screen flex-col items-center justify-center">
 			<section className="-mt-4 grid grid-cols-4 gap-4">
 				{cardList.map((item, itemIndex) => (
-					<CardItem key={itemIndex} item={item} onCardClick={onClickHandler}></CardItem>
+					<CardItem key={itemIndex} {...item}></CardItem>
 				))}
 			</section>
 			<button

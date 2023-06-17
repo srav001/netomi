@@ -4,7 +4,13 @@ import App from "../components/react/App.react";
 ---
 
 <Layout title="React Netomi">
-<main>
-  <App client:only="react" />
-</main>
+  <main>
+    <App client:load />
+  </main>
 </Layout>
+
+<style>
+:root {
+  --primary: rgb(67, 195, 236)
+}
+</style>
