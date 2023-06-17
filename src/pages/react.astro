@@ -1,0 +1,10 @@
+---
+import Layout from '../layouts/Layout.astro';
+import App from "../components/react/App.react";
+---
+
+<Layout title="React Netomi">
+<main>
+  <App client:only="react" />
+</main>
+</Layout>
