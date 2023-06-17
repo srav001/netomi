@@ -21,6 +21,7 @@
 		"react-dom": "^18.0.0",
 		"solid-js": "^1.4.3",
 		"svelte": "^3.55.0",
+		"tsparticles-engine": "^2.10.1",
 		"vue": "^3.3.4"
 	},
 	"devDependencies": {
