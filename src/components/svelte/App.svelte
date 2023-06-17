@@ -32,22 +32,5 @@
 			<CardItem {item} on:card-click={onClickHandler} />
 		{/each}
 	</section>
-	<button
-		on:click={resetGame}
-		class="mb-5 mt-10 cursor-pointer rounded-lg px-10 py-4 text-xl font-bold text-white shadow-md outline-none transition-all duration-300 ease-in-out hover:shadow-lg">
-		Reset
-	</button>
+	<button on:click={resetGame} class="btn btn-svelte mt-10"> Reset </button>
 </div>
-
-<style>
-	button {
-		border: 2px solid green;
-		background-color: green;
-	}
-
-	button:hover {
-		background-color: #f6f6f6;
-		border: 2px solid green;
-		color: green;
-	}
-</style>

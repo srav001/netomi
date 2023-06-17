@@ -24,6 +24,7 @@
 		"vue": "^3.3.4"
 	},
 	"devDependencies": {
+		"@unocss/transformer-directives": "^0.53.1",
 		"prettier": "^2.8.8",
 		"prettier-plugin-svelte": "^2.10.1",
 		"prettier-plugin-tailwindcss": "^0.3.0",
