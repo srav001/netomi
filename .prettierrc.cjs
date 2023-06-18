@@ -8,5 +8,13 @@ module.exports = {
 	arrowParens: 'avoid',
 	bracketSpacing: true,
 	bracketSameLine: true,
-	plugins: ['prettier-plugin-svelte', 'prettier-plugin-tailwindcss']
+	plugins: ['prettier-plugin-svelte', 'prettier-plugin-astro', 'prettier-plugin-tailwindcss'],
+	overrides: [
+		{
+			files: '*.astro',
+			options: {
+				parser: 'astro'
+			}
+		}
+	]
 };

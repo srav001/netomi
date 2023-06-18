@@ -1,15 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import App from "../components/svelte/App.svelte";
+import App from '../components/svelte/App.svelte';
 ---
 
 <Layout title="Svelte Netomi">
-  <App client:load />
+	<App client:load />
 </Layout>
 
 <style>
-:root {
-  --primary: var(--primary-svelte);
-}
+	:root {
+		--primary: var(--primary-svelte);
+	}
 </style>
-

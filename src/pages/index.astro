@@ -3,16 +3,19 @@ import Layout from '../layouts/Layout.astro';
 
 const versions = ['react', 'vue', 'svelte', 'solid'];
 function getNameOfVersion(version: string) {
-  return version.charAt(0).toUpperCase() + version.slice(1);
+	return version.charAt(0).toUpperCase() + version.slice(1);
 }
 ---
 
 <Layout title="Welcome to Netomi">
 	<small class="text-gray">Pick the matching pairs of Cards.</small>
-  <p class="font-bold text-purple text-3xl">Pick your Poison 🙃</p>
-  
-  { versions.map(version => 
-    <a class:list={['btn', `btn-${version}`]} href={`/${version}`}>{getNameOfVersion(version)}</a>
-  )}
-</Layout>
+	<p class="text-purple text-3xl font-bold">Pick your Poison 🙃</p>
 
+	{
+		versions.map(version => (
+			<a class:list={['btn', `btn-${version}`]} href={`/${version}`}>
+				{getNameOfVersion(version)}
+			</a>
+		))
+	}
+</Layout>

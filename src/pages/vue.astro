@@ -1,15 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import App from "../components/vue/App.vue";
+import App from '../components/vue/App.vue';
 ---
 
 <Layout title="Vue Netomi">
-  <App client:load />
+	<App client:load />
 </Layout>
 
 <style>
-:root {
-  --primary: var(--primary-vue);
-}
+	:root {
+		--primary: var(--primary-vue);
+	}
 </style>
-
