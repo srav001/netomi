@@ -1,5 +1,5 @@
 export function throwAparty() {
-	// @ts-expect-error I too lazy to type this
+	// @ts-expect-error I am too lazy to type this
 	tsParticles.load('tsparticles', {
 		fullScreen: {
 			zIndex: 1

@@ -4,7 +4,6 @@ import gameData from '../../utils/app.mock';
 import { shuffle } from '../../utils/shuffle';
 import { activateCard, resetCards } from '../../utils/card';
 import { For, createSignal } from 'solid-js';
-import './styles.css';
 
 export default function () {
 	const [getCardList, setCardList] = createSignal(shuffle(gameData));
