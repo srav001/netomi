@@ -3,7 +3,6 @@ import { resetCards } from '../../utils/card';
 import { initClickHandler } from './cardAction';
 import gameData from '../../utils/app.mock';
 import { shuffle } from '../../utils/shuffle';
-import './styles.css';
 import { useState } from 'react';
 
 export default function () {
