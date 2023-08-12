@@ -1,5 +1,6 @@
 ---
 import '../assets/style.css';
+import cards from '../utils/app.mock';
 
 export interface Props {
 	title: string;
@@ -27,6 +28,9 @@ const { title } = Astro.props;
 		</main>
 		<footer class="flex w-full items-center justify-center">
 			<a href="https://github.com/srav001/netomi">Netomi @ GitHub</a>
+
+			<!-- A very basic & simple image pre-fetch mechanism -->
+			{cards.map(card => <img class="hidden" src={card.pic} alt={''} />)}
 		</footer>
 	</body>
 </html>
